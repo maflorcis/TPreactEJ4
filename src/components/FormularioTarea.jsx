@@ -1,12 +1,22 @@
 import React from "react";
 import ListaTarea from "./ListaTarea";
 import { Button, Form } from "react-bootstrap";
-import {useState} from "react";
+import {useState, useEffect} from "react";
  
 const FormularioTarea = () => {
+    //busco los datos del local storage
+    const tareasLocalStorage = JSON.parse(localStorage.getItem('arregloTareaKey')) || [];
     //aqui va la mayoria de la logica
     const [tarea, setTarea] = useState('');
-    const [arregloTarea, setArregloTarea] = useState([]);
+    const [arregloTarea, setArregloTarea] = useState(tareasLocalStorage);
+    //ciclo de vide del componente
+    useEffect(()=>{
+      //console.log('prueba del ciclo de vida del componente')
+      localStorage.setItem('arregloTareaKey', JSON.stringify(arregloTarea)) 
+      }, [arregloTarea])
+    
+    
+
     const handleSubmit = (e) => {
         e.preventDefault();
         //arregloTarea.push no podemos usar el push con el state
