@@ -5,12 +5,12 @@
       "id": 1
     },
     {
-        "nombreTarea": "hacer commit",
-        "id": 2
-      },
-      {
-        "nombreTarea": "hacer git",
-        "id": 3
-      }
+      "nombreTarea": "hacer commit",
+      "id": 2
+    },
+    {
+      "nombreTarea": "no olvidar ver la clase",
+      "id": 3
+    }
   ]
 }
