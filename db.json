@@ -1,0 +1,16 @@
+{
+  "tareas": [
+    {
+      "nombreTarea": "hacer el repositorio",
+      "id": 1
+    },
+    {
+        "nombreTarea": "hacer commit",
+        "id": 2
+      },
+      {
+        "nombreTarea": "hacer git",
+        "id": 3
+      }
+  ]
+}

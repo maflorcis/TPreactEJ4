@@ -38,7 +38,7 @@ const FormularioTarea = () => {
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 d-flex" controlId="formBasicEmail">
           <Form.Control type="text" placeholder="Ingrese una tarea" onChange={(e)=>setTarea(e.target.value)}
-          value={tarea }/>
+          value={tarea}/>
           <Button variant="primary" type="submit">
             Enviar tarea
           </Button>
