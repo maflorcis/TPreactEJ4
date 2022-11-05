@@ -11,6 +11,14 @@
     {
       "nombreTarea": "no olvidar ver la clase",
       "id": 3
+    },
+    {
+      "nombreTarea": "recordarle a mauri subir el repo",
+      "id": 4
+    },
+    {
+      "nombreTarea": "seguir con la adaptación a mongodb",
+      "id": 5
     }
   ]
 }

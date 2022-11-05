@@ -29,8 +29,8 @@ const FormularioTarea = () => {
     crearTareaAPI(datos).then((respuesta) => {
       if (respuesta.status === 201) {
         Swal.fire(
-          "Tarea creada",
-          "La tarea fue creada correctamente",
+          "Tu tarea se ha creado",
+          "La tarea se agregó correctamente a la lista",
           "success"
         );
         reset();
@@ -38,7 +38,7 @@ const FormularioTarea = () => {
           setTarea(respuesta);
         });
       } else {
-        Swal.fire("Ocurrio un error", "Vuelva a intentarlo mas tarde", "error");
+        Swal.fire("Ups algo pasó", "Vuelva a intentarlo más tarde", "error");
       }
     });
   };
@@ -53,16 +53,16 @@ const FormularioTarea = () => {
           <aside className="col-sm-12 col-md-8 col-lg-4">
             <Form.Control
               type="text"
-              placeholder="Ingrese una tarea"
+              placeholder="Agregá una tarea"
               {...register("nombreTarea", {
                 required: "Este dato es obligatorio",
                 minLength: {
-                  value: 2,
-                  message: "Debe ingresar como minimo 2 caracteres",
+                  value: 3,
+                  message: "Debés ingresar como mínimo 3 caracteres",
                 },
                 maxLength: {
-                  value: 50,
-                  message: "Debe ingresar como maximo 50 caracteres",
+                  value: 150,
+                  message: "Como máximo 150 caracteres",
                 },
               })}
             />

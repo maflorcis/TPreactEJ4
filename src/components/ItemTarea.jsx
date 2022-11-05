@@ -6,8 +6,8 @@ const ItemTarea = ({tarea, setTarea}) => {
 
   const borrarTarea = () => {
     Swal.fire({
-      title: "¿Esta seguro de eliminar la tarea?",
-      text: "No se puede revertir este paso!",
+      title: "¿Estás seguro de quitar la tarea?",
+      text: "No podés volver atrás!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -23,14 +23,14 @@ const ItemTarea = ({tarea, setTarea}) => {
             });
 
             Swal.fire(
-              "Tarea eliminada!",
-              "La tarea fue correctamnete eliminada.",
+              "Tarea borrada!",
+              "Tu tarea fue removida de la lista",
               "success"
             );
           } else {
             Swal.fire(
-              "Se produjo un error!",
-              "Intente realizar esta operacion mas tarde.",
+              "Ups algo pasó!",
+              "Probá nuevamente luego.",
               "error"
             );
           }
