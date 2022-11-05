@@ -1,6 +1,6 @@
-const URL = 'http://localhost:3004/tareas'
+//const URL = 'http://localhost:3004/tareas' //Json-server
 
-//const URL = "http://localhost:4002/apilista/tareas"; //Json-server
+const URL = "http://localhost:4002/apilista/tareas"; 
 
 console.log(URL)
 

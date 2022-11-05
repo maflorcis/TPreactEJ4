@@ -16,7 +16,7 @@ const ItemTarea = ({tarea, setTarea}) => {
       cancelButtonText: "Cancelar",
     }).then((result) => {
       if (result.isConfirmed) {
-        borrarTareaAPI(tarea.id).then((respuesta) => {
+        borrarTareaAPI(tarea._id).then((respuesta) => {
           if (respuesta.status === 200) {
             consultarAPI().then((respuesta) => {
               setTarea(respuesta);
